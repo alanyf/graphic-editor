@@ -38,7 +38,7 @@ export default (props: IProps) => {
 
   useEffect(() => {
     if ($video) {
-      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+       
       isPlaying ? $video.play() : $video.pause();
     }
   }, [isPlaying]);

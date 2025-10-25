@@ -1,6 +1,6 @@
-import React from "react";
-import { IStageApis } from "@packages/lego/interface";
-import GridLine, { defaultGridLine } from "./grid-line";
+import React from 'react';
+import { IStageApis } from '@packages/lego/interface';
+import GridLine, { defaultGridLine } from './grid-line';
 
 export const GridLineExtend = ({ stage }: { stage: IStageApis }) => {
   const { gridLine: propsGridLine, size } = stage.store();

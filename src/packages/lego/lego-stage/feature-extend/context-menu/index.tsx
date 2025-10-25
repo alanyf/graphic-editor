@@ -51,55 +51,55 @@ export default class ContextMenu extends React.Component<IProps, IState> {
     const opt = menuItem.key;
     const { stage } = this.props;
     switch (opt) {
-      case 'selectAll':
-        stage.apis.selectAllSprite();
+    case 'selectAll':
+      stage.apis.selectAllSprite();
+      break;
+    case 'delete':
+      stage.apis.removeActiveSprite();
+      break;
+    case 'copy':
+      stage.apis.copyActiveSpriteList();
+      break;
+    case 'cut':
+      stage.apis.cutActiveSpriteList();
+      break;
+    case 'paste':
+      stage.apis.pasteActiveSpriteList();
+      break;
+    case 'undo':
+      stage.apis.history.undo();
+      break;
+    case 'redo':
+      stage.apis.history.redo();
+      break;
+    case 'group':
+      stage.apis.makeActiveSpriteGroup();
+      break;
+    case 'splitGroup':
+      stage.apis.splitActiveSpriteGroup();
+      break;
+    default:
+      // 层级移动
+      const levelList = ['levelUp', 'levelDown', 'levelTop', 'levelBottom'];
+      if (levelList.includes(opt)) {
+        setSpriteLevel(stage, opt as any);
         break;
-      case 'delete':
-        stage.apis.removeActiveSprite();
+      }
+      // 对齐
+      const alignList = [
+        'horizontalAlign',
+        'verticalAlign',
+        'horizontalVerticalAlign',
+        'topAlign',
+        'bottomAlign',
+        'leftAlign',
+        'rightAlign',
+      ];
+      if (alignList.includes(opt)) {
+        setSpriteListAlign(stage, opt as any);
         break;
-      case 'copy':
-        stage.apis.copyActiveSpriteList();
-        break;
-      case 'cut':
-        stage.apis.cutActiveSpriteList();
-        break;
-      case 'paste':
-        stage.apis.pasteActiveSpriteList();
-        break;
-      case 'undo':
-        stage.apis.history.undo();
-        break;
-      case 'redo':
-        stage.apis.history.redo();
-        break;
-      case 'group':
-        stage.apis.makeActiveSpriteGroup();
-        break;
-      case 'splitGroup':
-        stage.apis.splitActiveSpriteGroup();
-        break;
-      default:
-        // 层级移动
-        const levelList = ['levelUp', 'levelDown', 'levelTop', 'levelBottom'];
-        if (levelList.includes(opt)) {
-          setSpriteLevel(stage, opt as any);
-          break;
-        }
-        // 对齐
-        const alignList = [
-          'horizontalAlign',
-          'verticalAlign',
-          'horizontalVerticalAlign',
-          'topAlign',
-          'bottomAlign',
-          'leftAlign',
-          'rightAlign',
-        ];
-        if (alignList.includes(opt)) {
-          setSpriteListAlign(stage, opt as any);
-          break;
-        }
-        break;
+      }
+      break;
     }
   };
 

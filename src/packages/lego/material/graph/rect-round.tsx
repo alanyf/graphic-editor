@@ -35,30 +35,30 @@ export default (props: any) => {
   //   Z`;
   const d = `M${x},${y + r}
     ${`${
-      disableAngleLeftTop
-        ? `L${x},${y}, L${x + r},${y}`
-        : `A${r},${r} 0 0,1 ${x + r},${y}`
-    }`}
+    disableAngleLeftTop
+      ? `L${x},${y}, L${x + r},${y}`
+      : `A${r},${r} 0 0,1 ${x + r},${y}`
+  }`}
     L${x + width - r},${y}
     ${`${
-      disableAngleRightTop
-        ? `L${x + width},${y}, L${x + width},${y + r}`
-        : `A${r},${r} 0 0,1 ${x + width},${y + r}`
-    }`}
+    disableAngleRightTop
+      ? `L${x + width},${y}, L${x + width},${y + r}`
+      : `A${r},${r} 0 0,1 ${x + width},${y + r}`
+  }`}
 
     L${x + width},${y + height - r}
     ${`${
-      disableAngleRightBottom
-        ? `L${x + width},${y + height}, L${x + width - r},${y + height}`
-        : `A${r},${r} 0 0,1 ${x + width - r},${y + height}`
-    }`}
+    disableAngleRightBottom
+      ? `L${x + width},${y + height}, L${x + width - r},${y + height}`
+      : `A${r},${r} 0 0,1 ${x + width - r},${y + height}`
+  }`}
 
     L${x + r},${y + height}
     ${`${
-      disableAngleLeftBottom
-        ? `L${x},${y + height}, L${x},${y + height - r}`
-        : `A${r},${r} 0 0,1 ${x},${y + height - r}`
-    }`}
+    disableAngleLeftBottom
+      ? `L${x},${y + height}, L${x},${y + height - r}`
+      : `A${r},${r} 0 0,1 ${x},${y + height - r}`
+  }`}
 
     Z`;
   return (

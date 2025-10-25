@@ -38,7 +38,7 @@ export default (props: IProps) => {
 
   useEffect(() => {
     if ($audio) {
-      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+       
       isPlaying ? $audio.play() : $audio.pause();
     }
   }, [isPlaying]);

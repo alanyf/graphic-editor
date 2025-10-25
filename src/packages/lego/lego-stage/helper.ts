@@ -139,7 +139,7 @@ export const getInitStageSize = (WHRatio: IWidthHeightRatio = '16:9') => {
 export function findParentListByClass(_dom: any, _className: string): any {
   const domList: any[] = [];
   const dfs = (dom: any, className: string): any => {
-    if (!dom || dom.tagName === "BODY") {
+    if (!dom || dom.tagName === 'BODY') {
       return;
     }
     if (dom.classList.contains(className)) {
@@ -162,7 +162,6 @@ export function findSpriteDomByClass(dom: any, className: string): any {
   const domList = findParentListByClass(dom, className);
   return domList.pop();
 }
-
 
 export const isGroupSprite = (sprite?: ISprite) =>
   Boolean(sprite?.type === 'GroupSprite');
@@ -197,7 +196,7 @@ export const getSplitSpriteAngleMove = (sprite: ISprite, groupSprite: ISprite) =
 export const makeSpriteGroup = (activeSpriteList: ISprite[]) => {
   const { x, y, width, height } = getActiveSpriteRect(activeSpriteList);
   const groupSprite: ISprite = {
-    type: "GroupSprite",
+    type: 'GroupSprite',
     id: `Group_${Math.floor(Math.random() * 10000)}`,
     props: {},
     attrs: {

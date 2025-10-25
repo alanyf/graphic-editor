@@ -62,13 +62,13 @@ class LegoActiveSpriteContainer extends React.Component<IProps, IState> {
   };
 
   componentDidMount() {
-    document.addEventListener("pointerdown", this.handleMouseDown, false);
+    document.addEventListener('pointerdown', this.handleMouseDown, false);
     this.setState({ ready: true });
   }
 
   componentWillUnmount() {
     // 即将销毁时取消事件监听
-    document.removeEventListener("pointerdown", this.handleMouseDown, false);
+    document.removeEventListener('pointerdown', this.handleMouseDown, false);
   }
 
   handleMouseDown = (e: MouseEvent) => {

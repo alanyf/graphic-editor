@@ -29,8 +29,8 @@ export default (props: IProps) => {
   const d = `
         M${x},${y + half}  L${x},${y + height - half}
         M${x},${y + height - half} A${width / 2},${half} 0 1 0 ${x + width},${
-    y + height - half
-  }
+  y + height - half
+}
         L${x + width},${y + half}
         A${width / 2},${half} 0 1 0 ${x},${y + half} Z
         M${x},${y + half}  A${width / 2},${half} 0 1 0 ${x + width},${y + half}

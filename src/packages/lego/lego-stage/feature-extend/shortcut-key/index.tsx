@@ -1,7 +1,7 @@
-import React from "react";
-import { ISprite, IStageApis } from "@packages/lego/interface";
-import { isInputting } from "@packages/lego/utils/tools";
-import { getOptType, KeyBoardOptEnum, pressMeta, pressShift } from "../../keyboard";
+import React from 'react';
+import { ISprite, IStageApis } from '@packages/lego/interface';
+import { isInputting } from '@packages/lego/utils/tools';
+import { getOptType, KeyBoardOptEnum, pressMeta, pressShift } from '../../keyboard';
 
 interface IProps {
   stage: IStageApis;
@@ -71,46 +71,46 @@ export class EditorShortcutKey extends React.Component<IProps, IState> {
       return;
     }
     switch (opt) {
-      case KeyBoardOptEnum.delete:
-        stage.apis.removeActiveSprite();
-        break;
-      case KeyBoardOptEnum.selectAll:
-        stage.apis.selectAllSprite();
+    case KeyBoardOptEnum.delete:
+      stage.apis.removeActiveSprite();
+      break;
+    case KeyBoardOptEnum.selectAll:
+      stage.apis.selectAllSprite();
+      e.preventDefault();
+      break;
+    case KeyBoardOptEnum.copy:
+      stage.apis.copyActiveSpriteList();
+      e.preventDefault();
+      break;
+    case KeyBoardOptEnum.cut:
+      stage.apis.cutActiveSpriteList();
+      break;
+    case KeyBoardOptEnum.paste:
+      stage.apis.pasteActiveSpriteList();
+      if (stage.apis.state.shearPlate?.content?.length) {
         e.preventDefault();
-        break;
-      case KeyBoardOptEnum.copy:
-        stage.apis.copyActiveSpriteList();
-        e.preventDefault();
-        break;
-      case KeyBoardOptEnum.cut:
-        stage.apis.cutActiveSpriteList();
-        break;
-      case KeyBoardOptEnum.paste:
-        stage.apis.pasteActiveSpriteList();
-        if (stage.apis.state.shearPlate?.content?.length) {
-          e.preventDefault();
-        }
-        break;
-      case KeyBoardOptEnum.undo:
-        stage.apis.history.undo();
-        break;
-      case KeyBoardOptEnum.redo:
-        stage.apis.history.redo();
-        break;
-      case KeyBoardOptEnum.up:
-        this.moveActiveSprite(0, -1);
-        break;
-      case KeyBoardOptEnum.down:
-        this.moveActiveSprite(0, 1);
-        break;
-      case KeyBoardOptEnum.left:
-        this.moveActiveSprite(-1, 0);
-        break;
-      case KeyBoardOptEnum.right:
-        this.moveActiveSprite(1, 0);
-        break;
-      default:
-        break;
+      }
+      break;
+    case KeyBoardOptEnum.undo:
+      stage.apis.history.undo();
+      break;
+    case KeyBoardOptEnum.redo:
+      stage.apis.history.redo();
+      break;
+    case KeyBoardOptEnum.up:
+      this.moveActiveSprite(0, -1);
+      break;
+    case KeyBoardOptEnum.down:
+      this.moveActiveSprite(0, 1);
+      break;
+    case KeyBoardOptEnum.left:
+      this.moveActiveSprite(-1, 0);
+      break;
+    case KeyBoardOptEnum.right:
+      this.moveActiveSprite(1, 0);
+      break;
+    default:
+      break;
     }
   };
 

@@ -42,65 +42,65 @@ export default (props: any) => {
     ? ''
     : `
     ${getArray(column)
-      .map(
-        (_: number, i: number) =>
-          `M${cx - i * unitPx},${cy} L${cx - i * unitPx},${cy - tickLineLen}`,
-      )
-      .join('  ')}
+    .map(
+      (_: number, i: number) =>
+        `M${cx - i * unitPx},${cy} L${cx - i * unitPx},${cy - tickLineLen}`,
+    )
+    .join('  ')}
 
     ${getArray(columnRight)
-      .map(
-        (_: number, i: number) =>
-          `M${cx + i * unitPx},${cy} L${cx + i * unitPx},${cy - tickLineLen}`,
-      )
-      .join('  ')}
+    .map(
+      (_: number, i: number) =>
+        `M${cx + i * unitPx},${cy} L${cx + i * unitPx},${cy - tickLineLen}`,
+    )
+    .join('  ')}
 
 
     ${getArray(row)
-      .map(
-        (_: number, i: number) =>
-          `M${cx},${cy - i * unitPx} L${cx + tickLineLen},${cy - i * unitPx}`,
-      )
-      .join('  ')}
+    .map(
+      (_: number, i: number) =>
+        `M${cx},${cy - i * unitPx} L${cx + tickLineLen},${cy - i * unitPx}`,
+    )
+    .join('  ')}
 
     ${getArray(rowBottom)
-      .map(
-        (_: number, i: number) =>
-          `M${cx},${cy + i * unitPx} L${cx + tickLineLen},${cy + i * unitPx}`,
-      )
-      .join('  ')}
+    .map(
+      (_: number, i: number) =>
+        `M${cx},${cy + i * unitPx} L${cx + tickLineLen},${cy + i * unitPx}`,
+    )
+    .join('  ')}
   `;
   const gridLinePath = !showGridLine
     ? ''
     : `
     ${getArray(column)
-      .map(
-        (_: number, i: number) =>
-          `M${cx - i * unitPx},${0} L${cx - i * unitPx},${height}`,
-      )
-      .join('  ')}
+    .map(
+      (_: number, i: number) =>
+        `M${cx - i * unitPx},${0} L${cx - i * unitPx},${height}`,
+    )
+    .join('  ')}
 
     ${getArray(columnRight)
-      .map(
-        (_: number, i: number) =>
-          `M${cx + i * unitPx},${0} L${cx + i * unitPx},${height}`,
-      )
-      .join('  ')}
+    .map(
+      (_: number, i: number) =>
+        `M${cx + i * unitPx},${0} L${cx + i * unitPx},${height}`,
+    )
+    .join('  ')}
 
 
     ${getArray(row)
-      .map(
-        (_: number, i: number) =>
-          `M${0},${cy - i * unitPx} L${width},${cy - i * unitPx}`,
-      )
-      .join('  ')}
+    .map(
+      (_: number, i: number) =>
+        `M${0},${cy - i * unitPx} L${width},${cy - i * unitPx}`,
+    )
+    .join('  ')}
 
     ${getArray(rowBottom)
-      .map(
-        (_: number, i: number) =>
-          `M${0},${cy + i * unitPx} L${width},${cy + i * unitPx}`,
-      )
-      .join('  ')}
+    .map(
+      (_: number, i: number) =>
+        `M${0},${cy + i * unitPx} L${width},${cy + i * unitPx}`,
+    )
+    .join('  ')}
   `;
   // 直接画不区分正负半轴，有无法对齐坐标轴的问题
   // `
@@ -111,55 +111,55 @@ export default (props: any) => {
   const tickTextX = !showTickText
     ? null
     : getArray(column).map((_: number, i: number) => (
-        <text
-          x={cx - i * unitPx}
-          y={cy + 10}
-          dominantBaseline="middle"
-          textAnchor="middle"
-          fill={'#999'}
-          style={{ userSelect: 'none', fontSize: 8 }}>
-          {i === 0 ? '' : -i}
-        </text>
-      ));
+      <text
+        x={cx - i * unitPx}
+        y={cy + 10}
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fill={'#999'}
+        style={{ userSelect: 'none', fontSize: 8 }}>
+        {i === 0 ? '' : -i}
+      </text>
+    ));
   const tickTextXRight = !showTickText
     ? null
     : getArray(columnRight).map((_: number, i: number) => (
-        <text
-          x={cx + i * unitPx}
-          y={cy + 10}
-          dominantBaseline="middle"
-          textAnchor="middle"
-          fill={'#999'}
-          style={{ userSelect: 'none', fontSize: 8 }}>
-          {i === 0 ? '' : i}
-        </text>
-      ));
+      <text
+        x={cx + i * unitPx}
+        y={cy + 10}
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fill={'#999'}
+        style={{ userSelect: 'none', fontSize: 8 }}>
+        {i === 0 ? '' : i}
+      </text>
+    ));
   const tickTextY = !showTickText
     ? null
     : getArray(row).map((_: number, i: number) => (
-        <text
-          x={cx - 10}
-          y={cy - i * unitPx}
-          dominantBaseline="middle"
-          textAnchor="middle"
-          fill={'#999'}
-          style={{ userSelect: 'none', fontSize: 8 }}>
-          {i === 0 ? '' : i}
-        </text>
-      ));
+      <text
+        x={cx - 10}
+        y={cy - i * unitPx}
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fill={'#999'}
+        style={{ userSelect: 'none', fontSize: 8 }}>
+        {i === 0 ? '' : i}
+      </text>
+    ));
   const tickTextYBottom = !showTickText
     ? null
     : getArray(rowBottom).map((_: number, i: number) => (
-        <text
-          x={cx - 10}
-          y={cy + i * unitPx}
-          dominantBaseline="middle"
-          textAnchor="middle"
-          fill={'#999'}
-          style={{ userSelect: 'none', fontSize: 8 }}>
-          {i === 0 ? '' : -i}
-        </text>
-      ));
+      <text
+        x={cx - 10}
+        y={cy + i * unitPx}
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fill={'#999'}
+        style={{ userSelect: 'none', fontSize: 8 }}>
+        {i === 0 ? '' : -i}
+      </text>
+    ));
   return (
     <g transform={`translate(${x},${y})`}>
       {/* 背景 */}

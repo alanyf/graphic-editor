@@ -1,5 +1,5 @@
-import { ISprite, IStageApis } from "@packages/lego/interface";
-import { HistoryRecord } from "@packages/lego/utils/history";
+import { ISprite, IStageApis } from '@packages/lego/interface';
+import { HistoryRecord } from '@packages/lego/utils/history';
 
 export class HistoryExtend {
   stage: IStageApis;

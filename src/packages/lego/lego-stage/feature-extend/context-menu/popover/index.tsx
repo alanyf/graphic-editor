@@ -87,10 +87,10 @@ export default (props: IProps) => {
       } ${className}`}
       style={style}
       onClick={onClick}>
-        {/* <div className="popover-mask-container"></div> */}
-        <div className="popover-content">
-          {children}
-        </div>
+      {/* <div className="popover-mask-container"></div> */}
+      <div className="popover-content">
+        {children}
+      </div>
     </div>
   );
 };

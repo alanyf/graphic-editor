@@ -1,5 +1,5 @@
 /* eslint-disable eslint-comments/disable-enable-pair */
-/* eslint-disable max-lines, max-statements */
+ 
 import React, { ClipboardEvent } from 'react';
 import { distance, getControlPoints, rotate } from '@packages/geometry-tools';
 import type {
@@ -56,11 +56,11 @@ export function createUuid() {
 export function debounce(fn: (e: any) => any, delay: number) {
   let timer: any = null;
   return () => {
-    // eslint-disable-next-line prefer-rest-params
+     
     const args = arguments;
     clearTimeout(timer); // 清除重新计时
     timer = setTimeout(() => {
-      // eslint-disable-next-line prefer-spread
+       
       fn.apply(null, args as any);
     }, delay || 500);
   };

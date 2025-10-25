@@ -114,8 +114,8 @@ export const handlePositionResize = ({
   resizeLock,
 }: // logPoints,
 any) => {
-  // eslint-disable-next-line
-  let { width, height, x, y } = info; // eslint-disable-line
+   
+  let { width, height, x, y } = info;  
   let offsetPoint: Point = { x: 0, y: 0 };
   const initCenter = {
     x: initPos.x + initSize.width / 2,
@@ -174,7 +174,7 @@ any) => {
     const line = startEndPointToLine(centerPoint, portPoint);
     // 核心代码：计算过鼠标点到中心点与锚点组成直线的垂线的交点，即是等比缩放的场景下，鼠标应该在的位置
     const expectMousePoint = verticalLinePoint(line, mousePoint);
-    // eslint-disable-next-line no-param-reassign
+     
     mousePoint = expectMousePoint;
   }
   const offsetAngle = angle * (hasLeft ? -1 : 1) * (hasTop ? -1 : 1);
@@ -320,7 +320,7 @@ export const getAuxiliaryLine1 = (
   spriteList.push(stageBackgroundSprite);
   let dx = 0;
   let dy = 0;
-  // eslint-disable-next-line no-restricted-syntax
+   
   for (const sprite of spriteList) {
     const { size, coordinate } = sprite.attrs;
 
@@ -361,7 +361,7 @@ export const getAuxiliaryLine1 = (
       { pos: 'y', source: rectBottom, target: centerY },
       { pos: 'y', source: rectBottom, target: bottom },
     ];
-    // eslint-disable-next-line @typescript-eslint/no-loop-func
+     
     array.forEach((e: any) => {
       if (closeTo(e.source, e.target)) {
         if (e.pos === 'x') {
@@ -640,7 +640,6 @@ export const handleGridAdsorb = (
     dy: spriteRect.y - rect.y || Infinity,
   };
 };
-
 
 // 距离网格的最小距离
 export const minDisWithGrid = (n: number, unit: number) =>

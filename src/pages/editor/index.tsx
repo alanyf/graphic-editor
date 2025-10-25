@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-shadow */
+ 
 import React from 'react';
 import LegoStage, { IGridThemeEnum, SpritesMeta as SpriteMetaObj } from '@packages/lego';
 import type {

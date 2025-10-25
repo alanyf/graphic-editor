@@ -1,5 +1,5 @@
 // eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable max-statements */
+ 
 import type { IStageApis } from '@packages/lego';
 
 export const getSpriteInitMeta = ({

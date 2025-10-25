@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Point } from "@packages/lego/interface";
+import { useEffect, useState } from 'react';
+import { Point } from '@packages/lego/interface';
 
 export const HelperPoints = () => {
   const [points, setPoints] = useState<Point[]>([]);

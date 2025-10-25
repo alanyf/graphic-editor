@@ -184,12 +184,12 @@ export const pointOnLine = (point: Point, line: Line) => {
   const { k, b } = lineEquation(start, end);
   if (k === Infinity) {
     const diff = end.x - point.x;
-    // eslint-disable-next-line no-nested-ternary
+     
     return floatEqual(end.x, point.x) ? 0 : diff < 0 ? 1 : -1;
   }
   const dy = k * point.x + b;
   const diff = dy - point.y;
-  // eslint-disable-next-line no-nested-ternary
+   
   return floatEqual(dy, point.y) ? 0 : diff > 0 ? 1 : -1;
 };
 
@@ -204,12 +204,12 @@ export const pointOnLineByEquation = (point: Point, equation: Equation) => {
   const { k, b, x = 0 } = equation;
   if (k === Infinity) {
     const diff = x - point.x;
-    // eslint-disable-next-line no-nested-ternary
+     
     return floatEqual(x, point.x) ? 0 : diff < 0 ? 1 : -1;
   }
   const dy = k * point.x + b;
   const diff = dy - point.y;
-  // eslint-disable-next-line no-nested-ternary
+   
   return floatEqual(dy, point.y) ? 0 : diff > 0 ? 1 : -1;
 };
 

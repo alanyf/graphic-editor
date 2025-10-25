@@ -42,7 +42,7 @@ export class KeyBoardOperate {
   public registerShortcutKey(shortcutOpt: IShortcutOpt) {
     const { name, keys } = shortcutOpt;
     if (!Array.isArray(keys)) {
-      throw new Error(`注册快捷键时, keys 参数是必要的!`);
+      throw new Error('注册快捷键时, keys 参数是必要的!');
     }
     // 避免重复
     if (this.shortcutKeyMap[name]) {

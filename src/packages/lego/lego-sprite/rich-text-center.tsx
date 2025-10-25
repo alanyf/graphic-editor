@@ -63,7 +63,7 @@ export default (editorProps: IProps) => {
         //   stage.apis.setActiveSpriteList([sprite]);
         //   stage.apis.setEditingSprite(sprite);
         // }}
-        >
+      >
         <RichTextEditor
           id={id}
           toolbarId={`#outer-rich-text-toolbar__${id}`}
