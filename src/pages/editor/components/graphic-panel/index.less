@@ -1,0 +1,31 @@
+.graphic-icon-panel {
+  width: 180px;
+  color: #001529;
+  .graphic-icon-section {
+    &:first-child {
+      .graphic-icon-list-title {
+        margin-top: 0;
+      }
+    }
+    .graphic-icon-list-title {
+      font-size: 13px;
+      margin: 8px 0 0 0;
+    }
+    .graphic-icon-list {
+      display: flex;
+      flex-wrap: wrap;
+      .graphic-icon {
+        width: 22px;
+        height: 22px;
+        margin: 4px;
+        padding: 5px;
+        background-image: url('./icon/graphic-icon.svg');
+        background-repeat: no-repeat;
+        cursor: pointer;
+        &:hover {
+          background-color: #eee;
+        }
+      }
+    }
+  }
+}

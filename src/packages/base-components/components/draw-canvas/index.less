@@ -1,0 +1,27 @@
+.draw-canvas-container {
+  position: relative;
+  .draw-canvas-toolbar-container {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    padding: 0 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    .draw-canvas-toolbar-tool {
+      margin-right: 4px;
+      padding: 3px;
+      cursor: pointer;
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+  .canvas-container {
+    box-shadow: 0 0 5px 5px #eee;
+    cursor: pointer;
+  }
+}

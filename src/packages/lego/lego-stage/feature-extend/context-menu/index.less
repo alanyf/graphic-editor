@@ -1,0 +1,45 @@
+.context-menu-list {
+  width: 160px;
+  font-size: 12px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.88);
+  user-select: none;
+  padding: 10px 0;
+  .context-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    cursor: pointer;
+    height: 12px;
+    box-sizing: content-box;
+    position: relative;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+    .context-menu-icon {
+      width: 22px;
+      display: none;
+    }
+    .context-menu-text {
+    }
+    .context-menu-shortcut-key {
+      margin-left: auto;
+      color: #999;
+    }
+    .context-menu-more {
+      margin-left: auto;
+      color: #bbb;
+      transform: scale(0.6, 0.8);
+    }
+  }
+  .context-menu-item-disable {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.38);
+    .context-menu-list {
+      display: none;
+    }
+    &:hover {
+      background-color: inherit;
+    }
+  }
+}

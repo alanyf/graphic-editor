@@ -1,0 +1,129 @@
+.rich-text-sprite-container {
+  .rich-text-editor-container {
+    position: absolute;
+    left: 0;
+    top: -40px;
+    width: 390px;
+    height: 30px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 0 0 5px 5px #eee;
+    .rich-text-toolbar-container {
+      position: absolute;
+      top: 3px;
+      left: -14px;
+      transform: scale(0.9);
+      .tool-item {
+        margin-right: 5px;
+      }
+    }
+    .bf-content {
+      height: 200px;
+    }
+  }
+  .rich-text-editor-toolbar {
+    position: absolute;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    z-index: 10001;
+    padding: 3px;
+    cursor: default;
+    width: 382px;
+    .w-e-toolbar .w-e-menu {
+      width: auto;
+      height: auto;
+      padding: 6px;
+    }
+  }
+  .w-e-droplist {
+    .w-e-list {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+  }
+  .w-e-menu[data-title="字体"] {
+    .w-e-droplist {
+      width: 160px !important;
+    }
+  }
+  .w-e-menu[data-title="文字颜色"], .w-e-menu[data-title="背景色"] {
+    .w-e-droplist {
+      width: 210px !important;
+    }
+    .w-e-item {
+      background-color: ;
+    }
+  }
+  
+  .rich-text-editor-content {
+    width: 100%;
+    height: 100%;
+    .w-e-text-container {
+      background-color: transparent;
+      ul, ol {
+        list-style: inside;
+      }
+    }
+    .w-e-text {
+      overflow: overlay;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      background-color:#fff;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color:#ccc;
+      border-radius: 3px;
+    }
+  }
+  .rich-text-editor-render {
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    // .w-e-text {
+    //   overflow-y: hidden;
+    //   overflow: hidden;
+    // }
+    overflow-y: auto;
+    ul, ol {
+      list-style: inside;
+      margin-bottom: 0;
+      padding-inline-start: 0;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+      margin-bottom: 0%;
+    }
+    // h1, h2, h3, h4, h5, h6, p, ul {
+    //   margin: 10px 0;
+    // }
+    p, body {
+      margin: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+    }
+  }
+  .rich-text-sprite-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10001;
+    width: 100%;
+    height: 100%;
+  }
+  ::-webkit-scrollbar-track {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+  }
+}

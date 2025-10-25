@@ -1,0 +1,18 @@
+import React from 'react';
+
+export default (props: any) => (
+  <svg
+    viewBox="0 0 20 20"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    {...props}>
+    <g stroke="#555" fill="none" fillRule="evenodd">
+      <line x1="0" y1="1" x2="20" y2="1" strokeWidth="1"></line>
+      <line x1="0" y1="6" x2="20" y2="6" strokeWidth="2"></line>
+      <line x1="0" y1="11" x2="20" y2="11" strokeWidth="3"></line>
+      <line x1="0" y1="18" x2="20" y2="18" strokeWidth="6"></line>
+    </g>
+  </svg>
+);

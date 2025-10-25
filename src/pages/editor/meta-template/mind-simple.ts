@@ -1,0 +1,531 @@
+export default [
+  {
+    id: '4G4QRHE7',
+    type: 'RectRoundSprite',
+    props: {
+      borderRadius: 30,
+      stroke: '#9d9d9d',
+      strokeWidth: 2,
+      content: '<p><font size="4" color="#262626">语文</font><br/></p>',
+    },
+    attrs: {
+      coordinate: {
+        x: 339,
+        y: 31.66092895214601,
+      },
+      size: {
+        width: 136,
+        height: 53,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+      editing: false,
+    },
+  },
+  {
+    id: 'YJUG4ZNK',
+    type: 'ConnectLineSprite',
+    props: {
+      start: {
+        x: 0,
+        y: 0,
+        port: {
+          spriteId: '3YEN9O1Q',
+          id: 'sprite-port__3YEN9O1Q__3',
+          index: 3,
+          x: 100,
+          y: 50,
+          arcAngle: 0,
+        },
+      },
+      end: {
+        x: 141.5,
+        y: 90,
+        port: {
+          spriteId: '4K2JBD0E',
+          id: 'sprite-port__4K2JBD0E__2',
+          index: 2,
+          x: 0,
+          y: 50,
+          arcAngle: 180,
+        },
+      },
+      offset: 50,
+      lineType: 'SmoothCurve',
+      strokeWidth: 2,
+      strokeDasharray: 'none',
+      stroke: '#4e83fd',
+    },
+    attrs: {
+      coordinate: {
+        x: 475,
+        y: 408.66092895214604,
+      },
+      size: {
+        width: 141.5,
+        height: 90,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+    },
+  },
+  {
+    id: 'EQF39ONY',
+    type: 'ConnectLineSprite',
+    props: {
+      start: {
+        x: 0,
+        y: 180.00000000000003,
+        port: {
+          spriteId: 'XECA64VG',
+          id: 'sprite-port__XECA64VG__3',
+          index: 3,
+          x: 100,
+          y: 50,
+          arcAngle: 0,
+        },
+      },
+      end: {
+        x: 137.5,
+        y: 0,
+        port: {
+          spriteId: '4G4QRHE7',
+          id: 'sprite-port__4G4QRHE7__2',
+          index: 2,
+          x: 0,
+          y: 50,
+          arcAngle: 180,
+        },
+      },
+      offset: 50,
+      lineType: 'SmoothCurve',
+      strokeWidth: 2,
+      strokeDasharray: 'none',
+      stroke: '#4e83fd',
+    },
+    attrs: {
+      coordinate: {
+        x: 201.5,
+        y: 58.16092895214601,
+      },
+      size: {
+        width: 137.5,
+        height: 180.00000000000003,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+    },
+  },
+  {
+    id: 'W58243LV',
+    type: 'RectRoundSprite',
+    props: {
+      borderRadius: 30,
+      stroke: '#9d9d9d',
+      strokeWidth: 2,
+      content: '<p>数学<br/></p>',
+    },
+    attrs: {
+      coordinate: {
+        x: 339,
+        y: 121.66092895214601,
+      },
+      size: {
+        width: 136,
+        height: 53,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+      editing: false,
+    },
+  },
+  {
+    id: 'YSLW87EG',
+    type: 'RectRoundSprite',
+    props: {
+      borderRadius: 30,
+      stroke: '#9d9d9d',
+      strokeWidth: 2,
+      content: '<p>英语</p>',
+    },
+    attrs: {
+      coordinate: {
+        x: 339,
+        y: 211.66092895214604,
+      },
+      size: {
+        width: 136,
+        height: 53,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+      editing: false,
+    },
+  },
+  {
+    id: 'ERW9Z42O',
+    type: 'RectRoundSprite',
+    props: {
+      borderRadius: 30,
+      stroke: '#9d9d9d',
+      strokeWidth: 2,
+      content: '<p>物理<br/></p>',
+    },
+    attrs: {
+      coordinate: {
+        x: 616.5,
+        y: 290.74139342821906,
+      },
+      size: {
+        width: 136,
+        height: 53,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+      editing: false,
+    },
+  },
+  {
+    id: '9S6ONM15',
+    type: 'RectRoundSprite',
+    props: {
+      borderRadius: 30,
+      stroke: '#9d9d9d',
+      strokeWidth: 2,
+      content: '<p>化学<br/></p>',
+    },
+    attrs: {
+      coordinate: {
+        x: 616.5,
+        y: 382.16092895214604,
+      },
+      size: {
+        width: 136,
+        height: 53,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+      editing: false,
+    },
+  },
+  {
+    id: '4K2JBD0E',
+    type: 'RectRoundSprite',
+    props: {
+      borderRadius: 30,
+      stroke: '#9d9d9d',
+      strokeWidth: 2,
+      content: '<p>生物<br/></p>',
+    },
+    attrs: {
+      coordinate: {
+        x: 616.5,
+        y: 472.16092895214604,
+      },
+      size: {
+        width: 136,
+        height: 53,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+      editing: false,
+    },
+  },
+  {
+    id: 'JS7SBZV4',
+    type: 'ConnectLineSprite',
+    props: {
+      start: {
+        x: 0,
+        y: 90.00000000000003,
+        port: {
+          spriteId: 'XECA64VG',
+          id: 'sprite-port__XECA64VG__3',
+          index: 3,
+          x: 100,
+          y: 50,
+          arcAngle: 0,
+        },
+      },
+      end: {
+        x: 137.5,
+        y: 0,
+        port: {
+          spriteId: 'W58243LV',
+          id: 'sprite-port__W58243LV__2',
+          index: 2,
+          x: 0,
+          y: 50,
+          arcAngle: 180,
+        },
+      },
+      offset: 50,
+      lineType: 'SmoothCurve',
+      strokeWidth: 2,
+      strokeDasharray: 'none',
+      stroke: '#4e83fd',
+    },
+    attrs: {
+      coordinate: {
+        x: 201.5,
+        y: 148.160928952146,
+      },
+      size: {
+        width: 137.5,
+        height: 90.00000000000003,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+    },
+  },
+  {
+    id: 'SFUDCXT0',
+    type: 'ConnectLineSprite',
+    props: {
+      start: {
+        x: 0,
+        y: 0,
+        port: {
+          spriteId: 'XECA64VG',
+          id: 'sprite-port__XECA64VG__3',
+          index: 3,
+          x: 100,
+          y: 50,
+          arcAngle: 0,
+        },
+      },
+      end: {
+        x: 137.5,
+        y: 0,
+        port: {
+          spriteId: 'YSLW87EG',
+          id: 'sprite-port__YSLW87EG__2',
+          index: 2,
+          x: 0,
+          y: 50,
+          arcAngle: 180,
+        },
+      },
+      offset: 50,
+      lineType: 'SmoothCurve',
+      strokeWidth: 2,
+      strokeDasharray: 'none',
+      stroke: '#4e83fd',
+    },
+    attrs: {
+      coordinate: {
+        x: 201.5,
+        y: 238.16092895214604,
+      },
+      size: {
+        width: 137.5,
+        height: 0,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+    },
+  },
+  {
+    id: '3YEN9O1Q',
+    type: 'RectRoundSprite',
+    props: {
+      borderRadius: 30,
+      stroke: '#9d9d9d',
+      strokeWidth: 2,
+      content: '<p>理科综合</p>',
+    },
+    attrs: {
+      coordinate: {
+        x: 339,
+        y: 382.16092895214604,
+      },
+      size: {
+        width: 136,
+        height: 53,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+      editing: false,
+    },
+  },
+  {
+    id: '3M22WLS6',
+    type: 'ConnectLineSprite',
+    props: {
+      start: {
+        x: 0,
+        y: 0,
+        port: {
+          spriteId: 'XECA64VG',
+          id: 'sprite-port__XECA64VG__3',
+          index: 3,
+          x: 100,
+          y: 50,
+          arcAngle: 0,
+        },
+      },
+      end: {
+        x: 137.5,
+        y: 170.49999999999997,
+        port: {
+          spriteId: '3YEN9O1Q',
+          id: 'sprite-port__3YEN9O1Q__2',
+          index: 2,
+          x: 0,
+          y: 50,
+          arcAngle: 180,
+        },
+      },
+      offset: 50,
+      lineType: 'SmoothCurve',
+      strokeWidth: 2,
+      strokeDasharray: 'none',
+      stroke: '#4e83fd',
+    },
+    attrs: {
+      coordinate: {
+        x: 201.5,
+        y: 238.16092895214604,
+      },
+      size: {
+        width: 137.5,
+        height: 170.49999999999997,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+      editing: false,
+    },
+  },
+  {
+    id: 'H5OG43NJ',
+    type: 'ConnectLineSprite',
+    props: {
+      start: {
+        x: 0,
+        y: 91.41953552392698,
+        port: {
+          spriteId: '3YEN9O1Q',
+          id: 'sprite-port__3YEN9O1Q__3',
+          index: 3,
+          x: 100,
+          y: 50,
+          arcAngle: 0,
+        },
+      },
+      end: {
+        x: 141.5,
+        y: 0,
+        port: {
+          spriteId: 'ERW9Z42O',
+          id: 'sprite-port__ERW9Z42O__2',
+          index: 2,
+          x: 0,
+          y: 50,
+          arcAngle: 180,
+        },
+      },
+      offset: 50,
+      lineType: 'SmoothCurve',
+      strokeWidth: 2,
+      strokeDasharray: 'none',
+      stroke: '#4e83fd',
+    },
+    attrs: {
+      coordinate: {
+        x: 475,
+        y: 317.24139342821906,
+      },
+      size: {
+        width: 141.5,
+        height: 91.41953552392698,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+    },
+  },
+  {
+    id: 'HS7EEP0R',
+    type: 'ConnectLineSprite',
+    props: {
+      start: {
+        x: 0,
+        y: 0,
+        port: {
+          spriteId: '3YEN9O1Q',
+          id: 'sprite-port__3YEN9O1Q__3',
+          index: 3,
+          x: 100,
+          y: 50,
+          arcAngle: 0,
+        },
+      },
+      end: {
+        x: 141.5,
+        y: 0,
+        port: {
+          spriteId: '9S6ONM15',
+          id: 'sprite-port__9S6ONM15__2',
+          index: 2,
+          x: 0,
+          y: 50,
+          arcAngle: 180,
+        },
+      },
+      offset: 50,
+      lineType: 'SmoothCurve',
+      strokeWidth: 2,
+      strokeDasharray: 'none',
+      stroke: '#4e83fd',
+    },
+    attrs: {
+      coordinate: {
+        x: 475,
+        y: 408.66092895214604,
+      },
+      size: {
+        width: 141.5,
+        height: 0,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+    },
+  },
+  {
+    id: 'XECA64VG',
+    type: 'RectRoundSprite',
+    props: {
+      borderRadius: 15.714285714285714,
+      fill: '#3370ff',
+      strokeWidth: 0,
+      content: '<p><b><font color="#ffffff" size="5">学科</font></b><br/></p>',
+    },
+    attrs: {
+      coordinate: {
+        x: 36.5,
+        y: 207.66092895214604,
+      },
+      size: {
+        width: 165,
+        height: 61,
+      },
+      angle: 0,
+      style: {},
+      creating: false,
+      editing: false,
+    },
+  },
+];

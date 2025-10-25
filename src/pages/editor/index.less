@@ -1,0 +1,45 @@
+.ant-pro-basicLayout-content {
+  height: 1px;
+}
+.lego-showcase-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  background-color: #f0f2f5;
+  .lego-showcase-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    background-color: #fff;
+    flex-grow: 0;
+    margin-bottom: 20px;
+  }
+  .lego-showcase-content {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    // border-radius: 3px;
+    // background-color: #fff;
+    // box-shadow: 0 0 8px 8px #eee;
+  }
+  .lego-stage-container {
+    background-color: #fff;
+    box-shadow: 0 0 8px 8px #eee;
+    overflow: hidden;
+  }
+  .lego-showcase-content-disable {
+    .lego-stage-container {
+      box-shadow: none;
+      overflow: hidden;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.popover-container {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  padding-left: 10px;
+}
+.popover-left-container {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  padding-left: 10px;
+}
+.popover-content {
+  background-color: #fff;
+  box-shadow: 0 0 8px 3px #0001;
+  border-radius: 3px;
+}
+.popover-container-hidden {
+  display: none;
+}
+.popover-parent-container {
+  &:hover {
+    .popover-container {
+      display: block;
+    }
+  }
+}

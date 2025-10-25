@@ -1,8 +1,9 @@
-import { Example } from './example';
+// import { Example } from './example';
+import LegoShowcase from '../pages/editor';
 
 const Index = () => (
   <div className="container-box">
-    <Example />
+    <LegoShowcase />
   </div>
 );
 

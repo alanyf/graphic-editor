@@ -1,0 +1,19 @@
+.lego-sprite-container {
+  position: absolute;
+  z-index: 2;
+  cursor: move;
+  &:hover {
+    .link-port-point-container {
+      display: block;
+    }
+  }
+  .link-port-point-container {
+    display: none;
+  }
+  .lego-sprite-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: crosshair;
+  }
+}

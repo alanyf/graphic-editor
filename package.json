@@ -31,8 +31,11 @@
     "@ant-design/icons": "5.x",
     "@modern-js/runtime": "2.68.18",
     "antd": "^5.27.6",
+    "color-selector-react": "^0.3.0-beta.4",
+    "hotkeys-js": "^3.10.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "wangeditor": "^4.7.11"
   },
   "devDependencies": {
     "@modern-js/app-tools": "2.68.18",

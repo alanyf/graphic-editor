@@ -1,0 +1,31 @@
+.check-select-container {
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #fff;
+  // box-shadow: 0 0 5px 5px #eee;
+  .check-select-content {
+    display: flex;
+    align-items: center;
+    height: 28px;
+    padding: 0 10px 0 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(246, 246, 246);
+    }
+    .check-select-check-icon {
+      display: flex;
+      flex-grow: 0;
+      flex-shrink: 0;
+      align-items: center;
+      width: 20px;
+      color: #1890ff;
+    }
+    .check-select-label {
+      flex-grow: 1;
+      flex-shrink: 1;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
