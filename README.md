@@ -4,7 +4,7 @@
 
 > 一个类似PPT功能的图形编辑器。
 
-**Demo体验链接：**[图形编辑器在线Demo](https://alanyf.gitee.io/monorepo/graphic-editor)
+**Demo体验链接：**[图形编辑器在线Demo](https://graphic-editor.netlify.app/)
 
 ## 一、能力演示
 
