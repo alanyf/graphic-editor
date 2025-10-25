@@ -138,6 +138,7 @@ export default (props: any) => {
       icon={<FillIcon className="tool-icon-content" color={fillColor} />}
     />
   );
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const renderTextColor = () => (
     <PopoverTool
       overlayClassName="no-bg-popover"

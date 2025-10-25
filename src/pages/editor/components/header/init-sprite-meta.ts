@@ -1,5 +1,3 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
- 
 import type { IStageApis } from '@packages/lego';
 
 export const getSpriteInitMeta = ({

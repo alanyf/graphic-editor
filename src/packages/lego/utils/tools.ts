@@ -1,5 +1,4 @@
-/* eslint-disable eslint-comments/disable-enable-pair */
- 
+
 import React, { ClipboardEvent } from 'react';
 import { distance, getControlPoints, rotate } from '@packages/geometry-tools';
 import type {
@@ -562,16 +561,16 @@ export const findSpriteInSpriteList = (
 export function getOS() {
   const sUserAgent = navigator.userAgent;
   const isWin =
-    navigator.platform == 'Win32' || navigator.platform == 'Windows';
+    navigator.platform === 'Win32' || navigator.platform === 'Windows';
   const isMac =
-    navigator.platform == 'Mac68K' ||
-    navigator.platform == 'MacPPC' ||
-    navigator.platform == 'Macintosh' ||
-    navigator.platform == 'MacIntel';
+    navigator.platform === 'Mac68K' ||
+    navigator.platform === 'MacPPC' ||
+    navigator.platform === 'Macintosh' ||
+    navigator.platform === 'MacIntel';
   if (isMac) {
     return 'Mac';
   }
-  const isUnix = navigator.platform == 'X11' && !isWin && !isMac;
+  const isUnix = navigator.platform === 'X11' && !isWin && !isMac;
   if (isUnix) {
     return 'Unix';
   }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import mindSimpleMeta from './meta-template/mind-simple';
 import mindComplex from './meta-template/mind-complex';
 import flowMeta from './meta-template/flow';

@@ -12,7 +12,6 @@ import type {
 } from '../../interface';
 import {
   getActiveSpriteRect,
-  getPointFromEvent,
 } from './helper';
 import { Move } from './move';
 import { Resize } from './resize';
@@ -145,8 +144,7 @@ class LegoActiveSpriteContainer extends React.Component<IProps, IState> {
     let info: ISizeCoordinate = { width: 0, height: 0, x: 0, y: 0 };
     const activeSingle = activeSpriteList.length === 1;
     const angle = (activeSingle ? activeSpriteList[0].attrs.angle : 0) || 0;
-    const { canOperate, canResize, canRotate, resizeLock } =
-      this.getOperateConfig();
+    const { canOperate } = this.getOperateConfig();
     if (activeSpriteList.length > 0) {
       info = getActiveSpriteRect(activeSpriteList);
       // const padding = 4;

@@ -1,4 +1,4 @@
-import type { ISize, ISprite, ISpriteAttrs, IStageApis } from '../interface';
+import type { ISize, ISprite, IStageApis } from '../interface';
 import RichTextEditor from '../rich-text-render-editor';
 
 interface IProps {

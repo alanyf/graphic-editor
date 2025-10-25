@@ -1,6 +1,5 @@
 import React from 'react';
-import { EventTypeEnum, IAdsorbLine, ICoordinate, ISize, ISizeCoordinate, ISprite, ISpriteOperation, IStageApis, Line, Point } from '@packages/lego/interface';
-import { findParentByClass, isInputting } from 'src/utils/tools';
+import { EventTypeEnum, IAdsorbLine, ICoordinate, ISize, ISizeCoordinate, ISprite, ISpriteOperation, IStageApis, Line } from '@packages/lego/interface';
 import { getActiveSpriteRect, getAuxiliaryLine, getRectFromSprite, handleAdsorb, handleEqualSizeAdsorb, handleGridAdsorb, handlePositionResize } from '../helper';
 import operatePointData from './operate-point';
 

@@ -1,7 +1,6 @@
 import React from 'react';
 import type {
   ISprite,
-  ISpriteAttrs,
   ICoordinate,
   IStageApis,
   ISize,

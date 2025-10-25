@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Popover } from 'antd';
 
-export default ({ content, icon, children, ...rest }: any) => {
+export default ({ content, icon, ...rest }: any) => {
   const [visible, setVisible] = useState(false);
   return (
     <Popover

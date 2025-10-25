@@ -68,7 +68,7 @@ export class Move extends React.Component<IProps> {
     ) {
       return;
     }
-    const adsorbInfo = this.handleMoveAdsorbent(mousePoint, e);
+    const adsorbInfo = this.handleMoveAdsorbent(mousePoint);
     const { x, y } = adsorbInfo;
     const newActiveSpriteList = [...activeSpriteList];
     newActiveSpriteList.forEach((sprite: ISprite, i: number) => {
@@ -93,7 +93,7 @@ export class Move extends React.Component<IProps> {
     });
   };
 
-  handleMoveAdsorbent = (mousePoint: Point, e: MouseEvent) => {
+  handleMoveAdsorbent = (mousePoint: Point) => {
     const { stage, angle } = this.props;
     const { gridLine } = stage.store();
     const { initActiveInfo, initMousePos } = this.props.getInitAttrMapData();

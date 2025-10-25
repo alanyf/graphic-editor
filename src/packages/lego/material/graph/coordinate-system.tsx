@@ -1,6 +1,5 @@
 // import { useEffect } from 'react';
 import {
-  defaultFill,
   defaultStroke,
   defaultStrokeWidth,
   defaultStrokeLinecap,
@@ -14,7 +13,6 @@ export default (props: any) => {
     y = 0,
     width = 200,
     height = 200,
-    fill = defaultFill,
     stroke = defaultStroke,
     strokeWidth = defaultStrokeWidth,
     strokeLinecap = defaultStrokeLinecap,

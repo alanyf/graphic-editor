@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import RichTextEditor from 'wangeditor';
 import TextRender from './text-render';
 import './index.less';

@@ -10,8 +10,6 @@ import { GridLineExtend } from './grid-line';
 // 层级在精灵下方的扩展
 export const UnderSpriteFeatureExtend = ({
   stage,
-  scale = 1,
-  activeSpriteList = [],
 }: {
   stage: IStageApis;
   scale: number;

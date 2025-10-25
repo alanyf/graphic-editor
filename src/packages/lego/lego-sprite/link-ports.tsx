@@ -3,10 +3,9 @@ import type {
   ISprite,
   IStageApis,
   IContext,
-  ISpriteMeta,
   Point,
 } from '../interface';
-import { PortReferEnum, PortUnitEnum } from '../interface';
+import { PortUnitEnum } from '../interface';
 import { getOriginMousePointInSprite } from '../utils/tools';
 
 interface IProps {
@@ -19,7 +18,6 @@ export default class LinkPointsRender extends React.Component<IProps> {
   pointChangeHandle = (mousePoint: Point, e: MouseEvent, index: number) => {
     const { sprite, stage } = this.props;
     this.setState({ anchorMoving: true });
-    const { coordinate } = stage.store();
     const point = getOriginMousePointInSprite(e, sprite.attrs, stage);
     stage.apis.$event.emit('AnchorPointChange', {
       point: { ...mousePoint, ...point },
@@ -48,7 +46,6 @@ export default class LinkPointsRender extends React.Component<IProps> {
       getPoints,
       render,
       unit = PortUnitEnum.px,
-      refer = PortReferEnum.sprite,
     } = ports;
     const radius = 6;
     let { points = [] } = ports;

@@ -21,9 +21,8 @@ export class LinkSprite extends BaseSprite<IProps> {
   render() {
     const { sprite } = this.props;
     const { props, attrs } = sprite;
-    const { editing, size, coordinate } = attrs;
+    const { editing, size } = attrs;
     const { width, height } = size;
-    const { x, y } = coordinate;
     const { href = '', text = '', target = '_self' } = props;
     return (
       <>

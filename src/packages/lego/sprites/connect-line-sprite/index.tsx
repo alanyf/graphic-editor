@@ -358,7 +358,7 @@ export class ConnectLineSprite extends BaseSprite<IProps> {
     const { sprite, stage } = this.props;
     const { props, attrs } = sprite;
     const { creating } = attrs;
-    const { start, end, offset = 50, lineType = 'Line', ...rest } = props;
+    const { start, end, lineType = 'Line', ...rest } = props;
     const { x: x1, y: y1 } = start;
     const { x: x2, y: y2 } = end;
     const { spriteMap } = stage.store();

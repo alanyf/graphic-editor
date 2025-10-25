@@ -1,6 +1,6 @@
  
 import React from 'react';
-import { Button, Drawer, Input, Switch, Popover, message, Select, Slider, Space } from 'antd';
+import { Button, Drawer, Input, Switch, Popover, message, Select, Slider } from 'antd';
 import type {
   ISprite,
   IStageApis,

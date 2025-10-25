@@ -558,7 +558,6 @@ class LegoStage extends React.Component<IProps, IState> {
     onMouseUp?: (p: Point, e: MouseEvent) => void;
   }) => {
     const { stage, stageDom } = this;
-    const { coordinate } = this.state;
     if (this.state.creatingSprite) {
       this.resetCreatingSprite();
     }

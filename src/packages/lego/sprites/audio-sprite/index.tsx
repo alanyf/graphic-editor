@@ -17,7 +17,7 @@ export class AudioSprite extends BaseSprite<IProps> {
   };
 
   render() {
-    const { sprite, active } = this.props;
+    const { sprite } = this.props;
     const { props, attrs } = sprite;
     const { editing } = attrs;
     const { width, height } = attrs.size;
