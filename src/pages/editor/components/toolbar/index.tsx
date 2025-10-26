@@ -10,6 +10,7 @@ import StrokeWidthIcon from './icon/stroke-width-icon';
 import StrokeDasharrayIcon from './icon/stroke-dasharray-icon';
 import EndPointIcon from './icon/end-point-icon';
 import './index.less';
+import 'color-selector-react/dist/es/index.css';
 
 export default (props: any) => {
   const [fillColor, setFillColor] = useState('#000');
