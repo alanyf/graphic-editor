@@ -34,6 +34,7 @@ const getOptionList = (list: number[]) =>
 interface IProps {
   strokeWidth?: number;
   strokeWidthList?: number[];
+  style?: React.CSSProperties;
   onChange?: (strokeWidth: number) => void;
 }
 

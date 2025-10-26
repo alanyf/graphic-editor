@@ -4,6 +4,7 @@ import type { ICoordinate, ISize, ISprite } from '../interface';
 interface IProps {
   sprite: ISprite;
   className?: string;
+  children?: React.ReactNode;
 }
 
 export default class LegoSpriteContainer extends React.Component<IProps> {

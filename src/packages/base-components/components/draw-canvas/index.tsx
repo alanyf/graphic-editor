@@ -10,7 +10,6 @@ import {
 } from './helper';
 import type { IImageInfo, Point } from './interface';
 
-import DownloadSvg from './icon/download';
 import PreviewSvg from './icon/preview';
 import EraserSvg from './icon/eraser';
 import PenColorIcon from './icon/pen-color';
@@ -18,6 +17,7 @@ import PenStrokeWidthIcon from './icon/pen-stroke-width';
 import FillColorIcon from './icon/fill-color-icon';
 
 import './index.less';
+import { DownCircleFilled } from '@ant-design/icons';
  
 const Tooltip = (props: any) => <span {...props}>{props.children}</span>;
 
@@ -287,9 +287,8 @@ export default (props: IProps) => {
         </Tooltip>
 
         <Tooltip title="下载图片">
-          <img
+          <DownCircleFilled
             className="draw-canvas-toolbar-tool"
-            src={DownloadSvg}
             onClick={handleDownload}
           />
         </Tooltip>

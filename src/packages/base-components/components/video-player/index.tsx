@@ -71,7 +71,7 @@ export default (props: IProps) => {
       width={width}
       height={height}
       controls={true}
-      crossOrigin="Anonymous"
+      crossOrigin="anonymous"
       onClick={handleClick}
       onPlay={() => handlePlayChange(true)}
       onPause={() => handlePlayChange(false)}

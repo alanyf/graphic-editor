@@ -11,5 +11,4 @@ export { default as StrokeWidthSelect } from './components/stroke-width-select';
 export { default as VideoPlayer } from './components/video-player';
 export { default as AudioPlayer } from './components/audio-player';
 
-export { default as domtoimage } from './tools/dom-to-image';
 export { KeyBoardOperate, getHotkeysStr, IShortcutOpt, IShortcutOption, ITriggerCallback , IImageInfo};

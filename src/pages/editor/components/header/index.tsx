@@ -7,6 +7,7 @@ import type {
   IGridLine,
   IAdsorbLine,
   ICoordinate,
+  IImageInfo,
 } from '@packages/lego';
 import { LegoTools } from '@packages/lego';
 import {
@@ -19,7 +20,7 @@ import {
   CodepenOutlined,
   FullscreenOutlined,
 } from '@ant-design/icons';
-import { ColorBlock, IImageInfo } from '@packages/base-components';
+import { ColorBlock } from '@packages/base-components';
 import ColorPicker from 'color-selector-react';
 import SmallTooltip from '../SmallTooltip';
 import Toolbar from '../toolbar';

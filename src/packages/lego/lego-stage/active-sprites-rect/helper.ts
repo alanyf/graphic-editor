@@ -88,7 +88,7 @@ export const handleEqualSizeAdsorb = (
 };
 
 const getReversePos = (pos: string, reverse: boolean) => {
-  const map = {
+  const map: Record<string, string> = {
     'left': 'right',
     'right': 'left',
     'top': 'bottom',
@@ -515,7 +515,7 @@ export const handleAdsorb = ({
   resizePos = '',
   realResizePos = '',
   // 缩放是否移动到了反向，例如把右侧缩放锚点移动到矩形左侧
-  reverse = {},
+  // reverse = {},
 }: {
   rect: ISizeCoordinate;
   dx: number;

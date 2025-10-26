@@ -6,6 +6,7 @@ interface IProps {
   stage: IStageApis;
   meta: ISpriteMeta;
   active: boolean;
+  children?: React.ReactNode;
 }
 
 export default class SpriteRender extends React.PureComponent<IProps> {

@@ -6,6 +6,7 @@ export interface IBaseSpriteProps<IProps> {
   stage: IStageApis;
   active?: boolean;
   editing?: boolean;
+  children?: React.ReactNode;
 }
 
 export class BaseSprite<IProps = any, IState = any> extends React.Component<
