@@ -2,9 +2,7 @@
 import LegoShowcase from '../pages/editor';
 
 const Index = () => (
-  <div className="container-box">
-    <LegoShowcase />
-  </div>
+  <LegoShowcase />
 );
 
 export default Index;
